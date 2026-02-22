@@ -1,4 +1,11 @@
-import PaymentPage from "@/components/pages/PaymentPage";
+"use client";
+
+import dynamic from "next/dynamic";
+
+const PaymentPage = dynamic(
+    () => import("@/components/pages/PaymentPage"),
+    { ssr: false }
+);
 
 export default function Page() {
     return <PaymentPage />;
