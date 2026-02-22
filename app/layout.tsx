@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Providers from "./providers";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const notoThai = Noto_Sans_Thai({
   subsets: ["thai"],
@@ -40,6 +41,7 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>
