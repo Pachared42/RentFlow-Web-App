@@ -153,12 +153,6 @@ export default function LoginPage() {
                             </Alert>
                         ) : null}
 
-                        <Stack direction="row" className="items-center gap-3 py-2">
-                            <Divider className="flex-1 border-slate-200!" />
-                            <Typography className="text-xs text-slate-500">หรือ</Typography>
-                            <Divider className="flex-1 border-slate-200!" />
-                        </Stack>
-
                         <Box component="form" onSubmit={handleSubmit} className="mt-3 grid gap-4">
                             <TextField
                                 label="อีเมล"
