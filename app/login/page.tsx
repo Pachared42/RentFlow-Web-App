@@ -2,10 +2,10 @@
 
 import dynamic from "next/dynamic";
 
-const Login = dynamic(() => import("@/auth/Login"), {
-    ssr: false,
+const Login = dynamic(() => import("@/src/auth/Login"), {
+  ssr: false,
 });
 
 export default function Page() {
-    return <Login />;
+  return <Login />;
 }
