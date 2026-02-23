@@ -2,10 +2,10 @@
 
 import dynamic from "next/dynamic";
 
-const Register = dynamic(() => import("@/auth/Register"), {
-    ssr: false,
+const Register = dynamic(() => import("@/src/auth/Register"), {
+  ssr: false,
 });
 
 export default function Page() {
-    return <Register />;
+  return <Register />;
 }
