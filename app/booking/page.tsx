@@ -2,14 +2,17 @@
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
 
-const BookingPage = dynamic(() => import("@/components/pages/BookingPage"), {
+const BookingPage = dynamic(
+  () => import("@/src/components/pages/BookingPage"),
+  {
     ssr: false,
-});
+  }
+);
 
 export default function Page() {
-    return (
-        <Suspense fallback={null}>
-            <BookingPage />
-        </Suspense>
-    );
+  return (
+    <Suspense fallback={null}>
+      <BookingPage />
+    </Suspense>
+  );
 }
