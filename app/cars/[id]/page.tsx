@@ -1,10 +1,10 @@
-import CarDetailPage from "@/components/pages/CarDetailPage";
+import CarDetailPage from "@/src/components/pages/CarDetailPage";
 
 export default async function Page({
-    params,
+  params,
 }: {
-    params: Promise<{ id: string }>;
+  params: Promise<{ id: string }>;
 }) {
-    const { id } = await params;
-    return <CarDetailPage carId={id} />;
+  const { id } = await params;
+  return <CarDetailPage carId={id} />;
 }
